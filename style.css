@@ -1,0 +1,35 @@
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+section {width: 100%;
+        display: flex;}
+
+.translate {width: 150px;
+            height: 150px;
+            background-color: rgb(40, 254, 183);
+            border-radius: 50%;
+            transition: all;
+            transition-timing-function: linear;
+            transition-duration: 2s;}
+
+.translate:hover {transform: translate(200px,800px);
+                    background-color: rgb(166, 251, 169);}   
+
+.animate {height: 150px;
+            width: 150px;
+            position: absolute;
+            right: 10px;
+            animation-name: animate;
+            animation-duration: 2s;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: normal;}
+
+@keyframes animate {
+    from {background-color: aqua;
+        border-radius: 50%;}
+    to {background-color: rgb(159, 197, 197);
+        border-radius: 0px;}
+    }
